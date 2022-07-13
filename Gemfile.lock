@@ -5,6 +5,9 @@ PATH
       cgi (<= 0.1.0)
       json_pure (~> 2.1)
       rest-client (>= 1.8, <= 2.0.2)
-
+      
+PLATFORMS
+  x86_64-linux
+  
 DEPENDENCIES
   rspec (~> 3.0.0)
