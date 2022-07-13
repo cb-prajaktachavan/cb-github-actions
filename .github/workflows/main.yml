@@ -19,8 +19,6 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby-version }}
-    - name: Install rspec
-      run: gem install rspec
     - name: test rspec vsn
       run: gem list | grep rspec
     - name: Run tests
