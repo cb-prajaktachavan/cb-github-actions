@@ -19,7 +19,5 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby-version }}
-    - name: test rspec vsn
-      run: gem list | grep rspec
     - name: Run tests
       run: bundle exec rspec
