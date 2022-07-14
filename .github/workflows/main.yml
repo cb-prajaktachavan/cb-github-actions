@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['2.6.10']
+        ruby-version: ['2.6', '2.7', '3.0']
 
     steps:
     - uses: actions/checkout@v2
@@ -19,9 +19,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby-version }}
-    - name: install rest-client
-      run: gem install rest-client
-    - name: install rspec
-      run: gem install rspec
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
     - name: Run tests
-      run: rspec ./spec/chargebee_spec.rb
+      run: bundle exec rspec
