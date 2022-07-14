@@ -19,6 +19,8 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby-version }}
+    - name: install rest-client
+      run: gem install rest-client
     - name: install rspec
       run: gem install rspec
     - name: Run tests
