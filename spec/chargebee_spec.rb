@@ -30,7 +30,7 @@ describe "chargebee" do
       "addons[quantity][0]"=>"2",
       "addons[id][1]"=>"ssl",
       "addon_ids[0]"=>"addon_one1",
-      "addon_ids[1]"=>"addon_two",
+      "addon_ids[1]"=>"addon_two1",
       "card[first_name]"=>"Rajaraman",
       "card[last_name]"=>"Santhanam",
       "card[number]"=>"4111111111111111",
