@@ -13,7 +13,7 @@ describe "chargebee" do
       :id => "sub_KyVq7DNSNM7CSD",
       :plan_id => "free",
        :addons => [{:id => "monitor", :quantity => 2}, {:id => "ssl"}],
-       :addon_ids => ["addon_one", "addon_two"],
+       :addon_ids => ["addon_one1", "addon_two"],
        :card => {
          :first_name => "Rajaraman",
          :last_name => "Santhanam",
